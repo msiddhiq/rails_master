@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @split.amount %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @split.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @split.status %>
+</p>
+
+<%= link_to 'Edit', edit_split_path(@split) %> |
+<%= link_to 'Back', splits_path %>
