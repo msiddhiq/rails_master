@@ -1,2 +1,8 @@
-<h3>About the Website</h3>
-<p>Something about us.</p>
+Total Transactions: <%=@transactions.count%><br/>
+Total Amount: <%=@transactions.sum(:amount)%><br/>
+<%@transactions.each do |trans|%>
+    <div>
+      <b>Amount : </b><%=trans.amount%>
+      <b>Comments: </b><%=trans.comments%>
+    </div>
+<%end%>
